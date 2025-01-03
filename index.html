@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu 2025 - Bingo de Metas</title>
+    <!-- Importar Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo Meu 2025" class="logo">
+    </header>
+    <main>
+        <div class="bingo-container">
+            <div class="bingo-grid">
+                <!-- As células do bingo serão geradas via JavaScript -->
+            </div>
+            <button id="reset-button">Resetar Bingo</button>
+            <div id="message" class="hidden">
+                <span id="message-text"></span>
+                <button id="close-message" class="close-button">&times;</button>
+            </div> <!-- Área para mensagens -->
+        </div>
+    </main>
+
+    <div id="celebration" class="hidden">
+        <div class="confetti-container"></div>
+    </div>
+    <footer>
+        <h2>Registro de Tarefas Concluídas</h2>
+        <ul id="task-log">
+            <!-- Logs serão adicionados aqui -->
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

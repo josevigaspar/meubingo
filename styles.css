@@ -67,7 +67,7 @@ main {
 
 .bingo-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr); /* Mantém 5 colunas */
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -283,14 +283,18 @@ footer h2 {
 }
 
 /* Responsividade */
+
 @media (max-width: 1024px) {
     .bingo-grid {
+        /* Mantém 5 colunas */
+        grid-template-columns: repeat(5, 1fr);
         gap: 15px;
     }
 
     .cell {
         height: 130px;
         font-size: 15px;
+        padding: 15px;
     }
 
     #reset-button {
@@ -314,13 +318,15 @@ footer h2 {
 
 @media (max-width: 768px) {
     .bingo-grid {
-        grid-template-columns: repeat(3, 1fr);
+        /* Mantém 5 colunas */
+        grid-template-columns: repeat(5, 1fr);
         gap: 12px;
     }
 
     .cell {
         height: 110px;
         font-size: 14px;
+        padding: 12px;
     }
 
     .logo {
@@ -348,13 +354,15 @@ footer h2 {
 
 @media (max-width: 480px) {
     .bingo-grid {
-        grid-template-columns: repeat(2, 1fr);
+        /* Mantém 5 colunas */
+        grid-template-columns: repeat(5, 1fr);
         gap: 10px;
     }
 
     .cell {
         height: 90px;
         font-size: 13px;
+        padding: 10px;
     }
 
     .logo {
